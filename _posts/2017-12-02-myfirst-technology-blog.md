@@ -6,12 +6,16 @@ author:     "si"
 catalog:    true
 tags:
     - 前端 
-    -css 
-    -图片 
-    -居中
+    - css 
+    - 图片 
+    - 居中
 ---
 
 ### 图片居中的两种最简处理
+
+
+
+
 
 
 ---
