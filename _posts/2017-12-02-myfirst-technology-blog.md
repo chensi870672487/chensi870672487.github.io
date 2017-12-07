@@ -1,11 +1,77 @@
 ---
 layout:     post
-title:      "我的第一篇技术博客"
-date:       2017-12-02 22:34
-author:     "CS"
+title:      "图片居中的两种最简处理"
+date:       2017-12-07 16:25
+author:     "si"
 catalog:    true
 tags:
-    - Flag
+    - 前端 -css -图片 -居中
 ---
 
-### 以后开始写博客
+### 图片居中的两种最简处理
+
+标签（空格分隔）： 前端 css 图片居中
+
+
+
+
+---
+
+说明：这里不再介绍图片居中的众多方法（绝对定位，table方法，flex布局等），只介绍两种最简单的常用方法。
+tips：图片是个行内块元素（inline-block），所以在图片的样式中没必要再次写display：inline-block。
+我们先有一个div（已知宽高），div内部有一个img标签，如何让img居中（简单实用）？
+```css
+body{
+    margin:0;
+    padding:0;
+}
+div{
+    width:400px;
+    height:400px;
+    border:1px solid green;
+}
+img{
+    /* 这张图片(zixia.jpg)宽高为200*200 */
+    }
+```
+```html
+<body>
+    <div>
+    	<img src="../img/zixia.jpg" alt="">
+    </div>
+</body>
+```
+##第一种居中方式
+注意div和img增加的样式增加的部分
+
+```css
+div{
+    width:400px;
+    height:400px;
+    border:1px solid green;
+    text-align: center;/* 水平方向居中所需 */
+    line-height:400px;/* 垂直方向居中所需 */
+    font-size:0;/* 解决inline-block元素垂直方向产生的2px间隙 */
+}
+img{
+    /* 这张图片(zixia.jpg)宽高为200*200 */
+    vertical-align: middle;/* 垂直方向居中所需 */
+    }
+```
+##第二种居中方式
+注意div和img增加的样式增加的部分
+
+```css
+div{
+    width:400px;
+    height:400px;
+    border:1px solid green;
+    text-align: center;/* 水平方向居中所需 */
+}
+img{
+    /* 这张图片(zixia.jpg)宽高为200*200 */
+    vertical-align: top;/* 垂直方向居中所需 */
+    margin-top:100px;/* 垂直方向居中所需 (div高-img高)*0.5 */
+    }
+```
+接下来大家可以试一下效果，其中font-size：0是为了解决inline-block(行内块元素元素的间隙问题)
