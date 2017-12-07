@@ -1,26 +1,22 @@
 ---
 layout:     post
 title:      "图片居中的两种最简处理"
+subtitle:   "解决图片居中问题"
 date:       2017-12-07 16:25
-author:     "si"
+author:     "CS"
+header-img: "img/posts/yu.jpg"
+header-mask: 0.3
 catalog:    true
 tags:
-    - 前端 
-    - css 
-    - 图片 
+    - 前端开发
+    - css
+    - 图片
     - 居中
 ---
 
-### 图片居中的两种最简处理
-
-
-
-
-
-
----
-
-说明：这里不再介绍图片居中的众多方法（绝对定位，table方法，flex布局等），只介绍两种最简单的常用方法。
+> 观吾之一生，纵横跋扈，踩坑无数。
+#说明
+这里不再介绍图片居中的众多方法（绝对定位，table方法，flex布局等），只介绍两种最简单的常用方法。
 tips：图片是个行内块元素（inline-block），所以在图片的样式中没必要再次写display：inline-block。
 我们先有一个div（已知宽高），div内部有一个img标签，如何让img居中（简单实用）？
 ```css
@@ -44,7 +40,7 @@ img{
     </div>
 </body>
 ```
-##第一种居中方式
+#第一种居中方式
 注意div和img增加的样式增加的部分
 
 ```css
@@ -61,7 +57,7 @@ img{
     vertical-align: middle;/* 垂直方向居中所需 */
     }
 ```
-##第二种居中方式
+#第二种居中方式
 注意div和img增加的样式增加的部分
 
 ```css
