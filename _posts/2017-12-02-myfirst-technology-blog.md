@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "图片居中的两种最简处理"
-subtitle:   "解决图片居中问题"
+subtitle:   ""
 date:       2017-12-07 16:25
 author:     "CS"
 header-img: "img/posts/yu.jpg"
@@ -14,7 +14,8 @@ tags:
     - 居中
 ---
 
-> 观吾之一生，纵横跋扈，踩坑无数。
+> 以物物物，则物可物；以物非物，则物非物。
+
 #说明
 这里不再介绍图片居中的众多方法（绝对定位，table方法，flex布局等），只介绍两种最简单的常用方法。
 tips：图片是个行内块元素（inline-block），所以在图片的样式中没必要再次写display：inline-block。
