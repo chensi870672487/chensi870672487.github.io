@@ -72,7 +72,7 @@ div{
 img{
     /* 这张图片(zixia.jpg)宽高为200*200 */
     vertical-align: top;/* 垂直方向居中所需 */
-    margin-top:100px;/* 垂直方向居中所需 (div高-img高)*0.5 */
+    margin-top:100px;/* 垂直方向居中所需 (div高-img高)*0.5 */ 
     }
 ```
-接下来大家可以试一下效果，其中font-size：0是为了解决inline-block(行内块元素元素的间隙问题)
+接下来大家可以试一下效果，其中font-size：0是为了解决inline-block(行内块元素的间隙问题)
